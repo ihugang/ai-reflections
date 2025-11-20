@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8" />
+        <title>AI Reflections · AI时代深度思考</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <style>
+            :root {
+                --bg: #f7f7fa;
+                --card-bg: #ffffff;
+                --text-main: #222;
+                --text-secondary: #666;
+                --accent: #3b82f6;
+                --accent-soft: #e0edff;
+                --border-soft: #e5e7eb;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                margin: 0;
+                padding: 0;
+                background: var(--bg);
+                font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text",
+                    system-ui, Roboto, Helvetica, Arial, "PingFang SC",
+                    "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+                -webkit-font-smoothing: antialiased;
+                color: var(--text-main);
+            }
+
+            .page {
+                max-width: 900px;
+                margin: 0 auto;
+                padding: 40px 18px 80px;
+            }
+
+            .title {
+                font-size: 32px;
+                font-weight: 700;
+                margin-bottom: 8px;
+                letter-spacing: 0.02em;
+            }
+
+            .subtitle {
+                font-size: 15px;
+                color: var(--text-secondary);
+                margin-bottom: 32px;
+                line-height: 1.6;
+            }
+
+            .divider {
+                height: 1px;
+                background: linear-gradient(
+                    to right,
+                    transparent,
+                    var(--border-soft),
+                    transparent
+                );
+                margin: 30px 0;
+            }
+
+            .article-list {
+                display: flex;
+                flex-direction: column;
+                gap: 22px;
+            }
+
+            .article-card {
+                background: var(--card-bg);
+                padding: 22px 24px;
+                border-radius: 16px;
+                box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06),
+                    0 1px 3px rgba(15, 23, 42, 0.08);
+                transition: transform 0.15s ease, box-shadow 0.2s ease;
+                text-decoration: none;
+                color: var(--text-main);
+            }
+
+            .article-card:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08),
+                    0 2px 6px rgba(15, 23, 42, 0.12);
+            }
+
+            .article-title {
+                font-size: 18px;
+                margin: 0 0 6px;
+                font-weight: 600;
+            }
+
+            .article-desc {
+                font-size: 14px;
+                color: var(--text-secondary);
+                margin: 0 0 10px;
+                line-height: 1.6;
+            }
+
+            .article-meta {
+                font-size: 12px;
+                color: #999;
+            }
+
+            .footer {
+                text-align: center;
+                margin-top: 60px;
+                font-size: 12px;
+                color: #bbb;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="page">
+            <div class="title">AI Reflections</div>
+            <div class="subtitle">
+                一个专注于 <strong>AI时代深度思考</strong> 的专题栏目。<br />
+                记录组织、权力、文明、自动化、人与智能关系的结构性观察。
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- 文章列表 -->
+            <div class="article-list">
+                <!-- 第一篇文章 -->
+                <a class="article-card" href="./001-ai-power-native/">
+                    <div class="article-title">
+                        为什么很多组织永远无法完成 AI 转型？——Power-Native
+                        的极限
+                    </div>
+                    <div class="article-desc">
+                        探讨为什么 Power-Native 组织难以真正跨入
+                        AI-native，揭示权力结构与自动化逻辑的深层冲突。
+                    </div>
+                    <div class="article-meta">
+                        第 001 篇 · AI时代组织结构分析
+                    </div>
+                </a>
+
+                <!-- 未来文章可继续按相同格式添加 -->
+                <!--
+      <a class="article-card" href="./002-some-article/">
+        <div class="article-title">新文章标题</div>
+        <div class="article-desc">一句简介。</div>
+        <div class="article-meta">第 002 篇</div>
+      </a>
+      -->
+            </div>
+
+            <div class="footer">
+                © AI Reflections ｜ Designed for GitHub Pages
+            </div>
+        </div>
+    </body>
+</html>
